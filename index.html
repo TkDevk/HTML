@@ -1,0 +1,278 @@
+    <!-- Especifica que estamos trabajando un documento HTML -->
+    <!DOCTYPE html>
+    <!--Especifica el lenguaje el cual usara el documento-->
+    <html lang="en">
+    <!--Especificamos las rutas de los archivos externos de nuestro proyecto, metadatos-->   
+    <!--Atajo para documentar "ctrl" +"}"--> 
+    <head>
+        <!--Especificamos que nuestro documento permita caracteres especiales-->
+        <meta charset="UTF-8">
+        <!--Especificamos que nuestro contenido se visualice en diferentes dispositivos-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Especificamos el titulo de nuestro proyecto web-->
+        <!--https://boxicons.com/ y  fonts.google.com/icons para iconos-->
+        <title>Cletas</title>
+        <!--Linkeo con boxicon-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="css/style.css">
+        <!--Con ctrl+click puedo darle click al href-->
+    </head>
+    <!--Especifica el contenido de nuestro sitio web-->
+    <body>
+        <header class="hero">
+            <nav class="nav__hero">
+                <!--Navegacion del encabezado-->
+                <div class="container nav__hero">
+                <div class="logo"> 
+                    <!--Span resalta un contenido especifico-->
+                <h2 class="logo_name">Clts<span class="point">.</span></h2>
+                </div>
+                <!--Enlaces de navegacion-->
+                <div class="links">
+                    <a href="#inicio" class="link">Inicio</a>
+                    <a href="#servicios" class="link">Servicio</a>
+                    <a href="#proyecto" class="link">Proyecto</a>
+                    <a href="#clientes" class="link">Clientes</a>
+                    <a href="#contacto" class="link link--active">Contacto</a>
+                </div>
+                </div>
+            </nav>
+            <!--Seccion principal del encabezado-->
+            <section class="container hero__main" id="inicio">
+        <div class="hero__textos">    
+                <h1 class="title"> La mejor <span class="title--active"> Experiencia Digital.</span></h1>
+            <p class="copy"> Nos encargaremos de llevar tu idea al <span class="copy__active"> siguiente nivel</span></p>
+            <!--Le pongo href="#" para que se quede en la misma pagina cuando de click-->
+            <a href="#" class="cta"> Agenda un demo </a>
+            </div>
+            <!--Imagen del encabezado-->
+            <img src="img/header.png" alt="imagen header" class="mockup">
+            </section>
+        </header>
+        <main>
+            <section class="services" id="servicios">
+                <div class="container">
+                    <h2 class="subtitle"> Nuestros servicios<span>.</span> </h2>
+                    <p class="copy__active"> Ofrecemos la soluciones perfectas para revolucion digital</p>
+                
+                <!--Especifica que creara un contenedor para los articulos de los servicios-->
+                <article class="container-cards"> <!--Con article agrupo varios elementos-->
+                    <div class="card">
+                        <img src="img/66ce80666ca28e55b4ac9969627dd47a.jpg" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Especialista en diseño UX /IU</p>
+                            <h3 class="card__title">Web Apps<span class="point">.</span></h3>
+                            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta vel voluptates iusto quibusdam omnis doloribus recusandae vitae, excepturi officia ipsum sequi facere quasi, necessitatibus illum qui placeat ipsa itaque.</p>
+                        </div>
+                        <a href="#" class="card__button">Comienza tu proyecto</a>
+                    </div>
+                    <div class="card">
+                        <img src="img/Bikepacking-101-Handbook_main.jpg" class="card__img">
+                        <div class="cards__text">
+                            <p class="card__list">Especialista en diseño UX /IU</p>
+                            <h3 class="card__title">Diseño Web<span class="point">.</span></h3>
+                            <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta vel voluptates iusto quibusdam omnis doloribus recusandae vitae, excepturi officia ipsum sequi facere quasi, necessitatibus illum qui placeat ipsa itaque.</p>
+                        </div>
+                        <a href="#" class="card__button">Comienza tu proyecto</a>
+                </div>
+                <div class="card">
+                    <img src="img/f4603013c950df3aa664bb3e44f063c1.jpg" class="card__img">
+                    <div class="cards__text">
+                        <p class="card__list">Especialista en diseño UX /IU</p>
+                        <h3 class="card__title">Ecommerce<span class="point">.</span></h3>
+                        <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dicta vel voluptates iusto quibusdam omnis doloribus recusandae vitae, excepturi officia ipsum sequi facere quasi, necessitatibus illum qui placeat ipsa itaque.</p>
+                    </div>
+                    <a href="#" class="card__button">Comienza tu proyecto</a>
+            </div>
+            
+                </article>
+            </div>   
+            </section>
+            <!--Especificamos la seccion de nuestro proyecto-->
+
+        <section class="projects container" id="proyectos">
+            <h2 class="subtitle"> Proyectos Recientes<span class="point">.</span></h2>
+            <p class="copy__section">Hemos colaborado con marcas a nivel mundial</p>
+            <article class="container-bg">
+                <div class="card">
+                    <div class="cards__text">
+                    <h3 class="card__title"> Diseño web <span class="point">.</span></h3>
+                    <p class="card__date">24 de Agosto 2023</p>
+                    <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint placeat commodi, laboriosam vero ut corporis doloremque necessitatibus earum. Tempora possimus repellat eos ut eligendi expedita illo dolore perferendis ratione?</p>
+                    <a href="#" class="card__button">Comienza tu proyecto</a>
+                </div>
+            </div> 
+                  <div class="background">
+                    <img src="img/background.jpg" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title"></h3>
+                            <p class="background__copy">
+                                La realidad aumentada transformara por completo la educacion
+                            </p>
+
+                        
+                    </div>
+
+                  </div>
+                  <div class="card">
+                    <div class="cards__text">
+                    <h3 class="card__title"> Diseño web <span class="point">.</span></h3>
+                    <p class="card__date">24 de Agosto 2023</p>
+                    <p class="card__copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sint placeat commodi, laboriosam vero ut corporis doloremque necessitatibus earum. Tempora possimus repellat eos ut eligendi expedita illo dolore perferendis ratione?</p>
+                    <a href="#" class="card__button">Comienza tu proyecto</a>
+                </div>
+            </div> 
+                  <div class="background">
+                    <img src="img/bikepacking.jpg" class="background__img">
+                    <div class="background__text">
+                        <h3 class="background__title"></h3>
+                            <p class="background__copy">
+                                La realidad aumentada transformara por completo la educacion
+                            </p>
+
+                        
+                    </div>
+
+                  </div>
+            </article>
+            <section class="testimony">
+                <div class="container">
+                    <h2 class="subtite">Clientes satsfechos <span class="point">.</span></h2>
+                    <p class="copy__section"> Cientos de empresas confian en nosotros</p>
+                    <div class="testimony_container">
+                        <div class="testimony__card">
+                            <img src="img/1539001893.svg" class="testimony__img">
+                            <div class="testimony__copy"></div>
+                            <i class='bx bxl-google testimony__logo'></i>
+                            <div class="testimony__info">
+                                <h3 class="testimony__name">Duvan Rodriguez</h3>
+                                <p class="testimony__position"> Director de Google</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimony__card">
+                            <img src="img/1539001893.svg" class="testimony__img">
+                            <div class="testimony__copy"></div>
+                            <i class='bx bxl-apple testimony__logo'></i>
+                            <div class="testimony__info">
+                                <h3 class="testimony_name">Duvan Rodriguez</h3>
+                                <p class="testimony__position"> Director de Apple</p>
+                            </div>
+                        </div>
+                    <div clss="testimony__card">
+                        <div class="testimony__text">
+                            <img src="img/66ce80666ca28e55b4ac9969627dd47a.jpg" class="google__logo">
+                            <p class="testimony__history"> Desde que empezamos a trabajar con Templune comenzamos a obtener resultados increibles. Ahora hemos llegamod a un mayor numero de clientes potenciales.</p>
+                            <div class="testimony__copy testimony--modifier">
+                                <img src="img/contactenos.jpg" class="testimony__logo logo--picture">
+                                <div class="testimony__info">
+                                    <h3 class="testimony__name"> Uriel Rodriguez</h3>
+                                    <p class="testimony__position">Director de google colombia</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </section>
+        <!--Teacher's part-->
+        </section> 
+         <section class="email container container--modifier"> <!--Recibe informacion para contactar-->
+            <h2 class="subtitle subtitle--modifier">Somos tu mejor opción para adoptar la transformación digital<span class="point">.</span></h2> <!--segunda seccion de la pagina, antes del footer-->
+
+            <p class="copy__section copy__section--modifier">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, et dolore id necessitatibus quibusdam rem accusamus fugiat doloremque voluptatibus eius!</p>
+            <!--crea tarjetas visuales-->
+            <div class="check"> <!--<div> contenedor para la informacion -->
+                <div class="check__item">
+                    <i class='bx bx-check' ></i> <!--Icono-->
+                    <div class="check__numbers">
+                        <p class="check__number">+200</p>
+                        <p class="check__copy">Proyectos exitosos</p> 
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check' ></i> <!--Icono de numeros -->
+                    <div class="check__numbers">
+                        <p class="check__number">+200</p>
+                        <p class="check__copy">Proyectos exitosos</p>
+                    </div>
+                </div>
+                <div class="check__item">
+                    <i class='bx bx-check' ></i><!--Icono de numeros-->
+                    <div class="check__numbers">
+                        <p class="check__number">+200</p>
+                        <p class="check__copy">Proyectos exitosos</p>
+                    </div>
+                </div>
+            </div>
+            <form class="newsletter"> <!--Formulario para ingresar informacion-->
+                <input type="text" class="newsletter__input" placeholder="Ingresa tu email">  
+                <input type="submit" class="newsletter__submit" value="Comienza hoy">
+            </form>
+        </section>
+    </main>
+    <!--Footer, es la ultima parte de la pagina, en ella podemos encontrar mas iformacion de contacto y en este caso enviamos informacion atraves de un form-->
+    <footer class="footer" id="clientes">
+        <div class="container footer__caption">  
+            <section class="download"> <!--Seccion de descarga de la app, si lo desea-->
+                <h3 class="title__footer">Descarga nuestra App</h3> <!--Icono de apple, en caso de descargarlo para apple-->
+                <div class="download__app">
+                    <div class="download__item">
+                        <i class='bx bxl-apple download__logo' ></i>
+                        <h4 class="download__title">App Store</h4>
+                    </div>
+                    <div class="download__item"><!--Icono de play store, en caso de descargarlo para android-->
+                        <i class='bx bxl-play-store download__logo' ></i>
+                        <h4 class="download__title">Play Store</h4>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <p class="copyright">AlexCG &copy; 2020 Todos los derechos reservados</p> <!--&copy; representa simbolo derechos de autor-->
+    
+                    <a href="#" class="politica__privacidad politica__privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica__privacidad ">Terminos y condiciones</a> <!--Esta parte nos llevaria a la seccion en la que podemos leer terminos y condiciones tambien la politica de privacidad-->
+                </div>
+            </section>
+            <section class="get-email">
+                <h3 class="title__footer">¿Estás listo para trabajar con nosotros?</h3>
+                <form class="newsletter newsletter--modifier"> <!--Formular para ingresar informacion-->
+                    <input type="text" class="newsletter__input" placeholder="Ingresa tu email"> 
+                    <input type="submit" class="newsletter__submit" value="Comienza hoy">
+                </form>
+                <div class="socialmedia">
+                    <p class="socialmedia__legend">Siguenos en:</p>
+                    <i class='socialmedia__icon bx bxl-facebook-circle'></i><!--Icono FB-->
+                    <i class='socialmedia__icon bx bxl-linkedin-square'></i><!--Icono Linkedin-->   <!--Icono-->                                                                                                   
+                    <i class='socialmedia__icon bx bxl-twitter' ></i>   <!--Icono twitter-->
+                    <i class='socialmedia__icon bx bxl-instagram' ></i><!--Icono Ig-->
+                    <i class='socialmedia__icon bx bxl-github' ></i>    <!--Icono github-->
+                </div>
+            </section>
+        </div>
+
+        <div class="contact">   <!--Seccion de contactanos-->
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon' ></i> <!--Linkea icono de copyright-->
+                <h3 class="contact__title">AlexCG Design</h3><!--titulo del item contacto-->
+            </div>
+            <div class="item__contact"> <!--Contenedor-->
+                <i class='bx bx-mail-send contact__icon' ></i> <!--Icono-->
+                <h3 class="contact__title">hola@alexcgdesign</h3> <!--titulo del item contacto-->
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon' ></i><!--Icono-->
+                <h3 class="contact__title">Paseos de la reforma</h3><!--titulo del item contacto-->
+            </div>
+            <div class="item__contact item__contact--gold"> <!--Contenedor-->
+                <i class='bx bxs-chat contact__icon contact__icon--modifier' ></i> <!--Icono-->
+                <h3 class="contact__title">Contactanos ahora</h3><!--titulo del item contacto-->
+            </div>
+        </div>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script> <!--extrae icono del url-->
+    </footer>
+        </main>    
+    </body>
+    </html>
+
+    <!--Alt+z alinie codigo-->          

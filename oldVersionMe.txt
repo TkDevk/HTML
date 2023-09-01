@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100&display=swap');
+
+/*Serie de variables personalizadas*/
+:root{
+   --gold1: #f4bd76;
+   --gold2: #f6cd8f;
+   --gray:#ffffff80;
+   --gray2:#f7d9d990;
+   --black: #1a1b1f;
+   --black2: #30353b;
+   /*Definicion de sombra cons desplazamiento y enfoque*/
+
+   /*arriba, derecha, izquierda y abajo*/
+   --shadow: 0 8px 8px;
+   --color_shadow: #00000033;
+}
+
+/*Selector universal*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    /*De esa manera centras el contenido Edgar le estas diciendo que arriba y abajo tenga a un margin 0 y que a los lados se lo asigne automatico o sea de igual tamaño a cada lado*/
+    /*Esta propiedad se encarga de ocultar los elementos*/
+    overflow: hidden;
+    padding: 100px 0;
+    height: auto;
+}
+
+.container--modifier {
+    width: 60%;
+}
+
+.hero{
+    width: 100vw;
+    /*Altura minima del dispositivo*/
+    min-height: 100vh; /*view height*/
+    /*Establecer un fondo con un degradado lineal*/
+    /*Linea-gradient(180) se encarga de crear un degradado en sentido de los grados*/
+    background: linear-gradient(90deg, var(--black2) 0%, var(--black)100%);
+}
+
+.nav__hero{
+    color: #fff;
+    height: 70px;
+    border-bottom: 1px solid rgba(11, 151, 115, 0.1); /*0.1 representa opacidad*/
+
+}
+
+.nav__container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: inherit; /*inherit ereda la altura del container dond esta contenido del contenedor original*/
+    padding: 0; /*el padding se va a 0 subiendo el valor al origen*/
+}
+
+
+      
+
+.logo__name{
+    font-size: 24px;
+}
+
+.link{
+    display: inline-block;
+    color:inherit;
+    text-decoration:none; 
+    font-weight: 300;
+    padding:10px; 
+}
+
+.link--active{
+    color: var(--gold1);
+}
+
+.point{
+    color: var(--gold1);
+}
+
+.hero__main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0;
+}
+
+.mockup{
+    object-fit: cover; /*Imagen*/
+    width: 48%;
+    min-height: 90vh;
+}
+
+.hero__textos {
+    width: 48%;
+}
+
+.title{
+    font-size: 56px;
+    font-weight: 300;
+    color: #ffffff;
+}
+.title--active {
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.copy{
+    font-size: 24px;
+    color: var(--gray);
+    /*text-shadow: var(--shadow) var(--color_shadow); color--shadow para que contraste el degradado principal*/
+    margin: 15px 0;
+}
+
+.copy__active{
+    font-weight: 700;
+}
+
+.cta {
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f4bd76 100%);
+    
+}
+
